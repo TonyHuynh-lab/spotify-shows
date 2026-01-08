@@ -1,0 +1,171 @@
+.event-card {
+    background: var(--spotify-gray);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.event-card-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    background: var(--spotify-gray-light);
+}
+
+.event-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.event-card:hover .event-card-image {
+    transform: scale(1.05);
+}
+
+.event-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: var(--gradient-overlay);
+}
+
+.event-card-content {
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    flex: 1;
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.event-name {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--spotify-text);
+    flex: 1;
+}
+
+.event-status {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-xl);
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.event-status.onsale {
+    background: rgba(29, 185, 84, 0.2);
+    color: var(--spotify-green);
+}
+
+.event-status.offsale,
+.event-status.cancelled,
+.event-status.postponed {
+    background: rgba(226, 33, 52, 0.2);
+    color: var(--spotify-error);
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.event-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--spotify-text-secondary);
+}
+
+.event-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--spotify-green);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.venue-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.venue-name {
+    color: var(--spotify-text);
+    font-weight: 500;
+}
+
+.venue-location {
+    font-size: 0.85rem;
+    color: var(--spotify-text-secondary);
+}
+
+.event-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--spotify-gray-light);
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+}
+
+.price-label {
+    color: var(--spotify-text-secondary);
+}
+
+.price-value {
+    color: var(--spotify-green);
+    font-weight: 600;
+}
+
+.event-button {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+    .event-card-content {
+        padding: var(--spacing-sm);
+    }
+
+    .event-name {
+        font-size: 1rem;
+    }
+}
