@@ -36,8 +36,8 @@
 }
 
 .search-input:focus {
-    border-color: var(--spotify-green) !important;
-    box-shadow: 0 0 0 3px rgba(29, 185, 84, 0.1);
+    border-color: var(--new-orange) !important; /* Changed temporarily */
+    box-shadow: 0 0 0 3px rgba(124, 23, 207, 0.767); /* COME BACK TO THIS */
 }
 
 .search-loading {

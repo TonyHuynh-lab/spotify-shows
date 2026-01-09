@@ -14,7 +14,7 @@
 }
 
 .artist-card.selected {
-    border-color: var(--spotify-green);
+    border-color: var(--new-orange); /* Changed temporarily */
     box-shadow: 0 4px 20px rgba(29, 185, 84, 0.3);
 }
 
@@ -115,7 +115,7 @@
 .stat-icon {
     width: 16px;
     height: 16px;
-    color: var(--spotify-green);
+    color: var(--new-orange); /* Changed temporarily */
 }
 
 .popularity-bar {

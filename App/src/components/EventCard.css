@@ -78,7 +78,7 @@
 
 .event-status.onsale {
     background: rgba(29, 185, 84, 0.2);
-    color: var(--spotify-green);
+    color: var(--new-orange); /* Changed temporarily */
 }
 
 .event-status.offsale,
@@ -105,7 +105,7 @@
 .event-icon {
     width: 18px;
     height: 18px;
-    color: var(--spotify-green);
+    color: var(--new-orange); /* Changed temporarily */
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -141,7 +141,7 @@
 }
 
 .price-value {
-    color: var(--spotify-green);
+    color: var(--new-orange); /* Changed temporarily */
     font-weight: 600;
 }
 

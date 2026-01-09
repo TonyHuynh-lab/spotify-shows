@@ -11,9 +11,13 @@
   --spotify-text: #ffffff;
   --spotify-text-secondary: #b3b3b3;
   --spotify-error: #e22134;
+
+  --new-orange: #ba69da;
+  --new-orange-hover: #c203c9;
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+  /*--gradient-primary: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);*/
+  --gradient-primary: linear-gradient(135deg, #d460e0 0%, #992fb9 100%);
   --gradient-dark: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
   --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
   
@@ -35,6 +39,8 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.25);
   --shadow-green: 0 4px 16px rgba(29, 185, 84, 0.3);
+  --shadow-purple: 0 4px 16px rgba(97, 29, 185, 0.3);
+  /* rgba(29, 185, 84, 0.3); */
   
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
@@ -130,12 +136,12 @@ button:disabled {
 .btn-primary {
   background: var(--gradient-primary);
   color: var(--spotify-darker);
-  box-shadow: var(--shadow-green);
+  box-shadow: var(--shadow-purple); /* COME BACK TO THIS */
 }
 
 .btn-primary:hover:not(:disabled) {
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4);
+  box-shadow: 0 6px 20px rgba(175, 39, 187, 0.4);
 }
 
 .btn-primary:active:not(:disabled) {
@@ -168,7 +174,7 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  border-color: var(--spotify-green);
+  border-color: var(--new-orange);
   background: var(--spotify-gray);
 }
 

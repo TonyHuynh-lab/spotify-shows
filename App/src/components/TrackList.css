@@ -90,13 +90,13 @@
 }
 
 .track-preview:hover {
-    background: var(--spotify-green);
+    background: var(--new-orange); /* Changed temporarily */
     color: var(--spotify-darker);
     transform: scale(1.1);
 }
 
 .track-spotify-link:hover {
-    background: var(--spotify-green);
+    background: var(--new-orange); /* Changed temporarily */
     color: var(--spotify-darker);
     transform: scale(1.1);
 }
